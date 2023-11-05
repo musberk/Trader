@@ -51,8 +51,6 @@ scipy==1.7.2
 six==1.16.0
 soupsieve==2.4.1
 tenacity==8.2.3
-tensorboard==2.14.1
-tensorboard-data-server==0.7.2
 tensorflow==2.14.0
 tensorflow-estimator==2.14.0
 tensorflow-intel==2.14.0
