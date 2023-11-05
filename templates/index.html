@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Market Prices</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Stock Market Prices</h1>
+
+    <form method="POST">
+        <label for="stock_symbol">Stock Symbol: </label>
+        <input type="text" name="stock_symbol" id="stock_symbol" required><br><br>
+
+        <label for="start_date">Start Date: </label>
+        <input type="date" name="start_date" id="start_date" required><br><br>
+
+        <label for="end_date">End Date: </label>
+        <input type="date" name="end_date" id="end_date" required><br><br>
+
+        <button type="submit">Get Stock Prices</button>
+    </form>
+
+    <br><br>
+
+    {% if chart %}
+    <div>
+        {{ chart | safe }}
+    </div>
+    {% endif %}
+</body>
+</html>
