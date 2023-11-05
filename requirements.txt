@@ -62,4 +62,4 @@ webencodings==0.5.1
 Werkzeug==2.2.3
 wrapt==1.14.1
 yfinance==0.2.31
-zipp==3.17.0
+zipp==3.15.0
